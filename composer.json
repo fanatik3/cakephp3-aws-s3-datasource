@@ -1,5 +1,5 @@
 {
-  "name": "sters/cakephp3-aws-s3-datasource",
+  "name": "fanatik3/cakephp3-aws-s3-datasource",
   "description": "AWS S3 datasource in CakePHP3",
   "type": "cakephp-plugin",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "s3",
     "datasource"
   ],
-  "homepage": "https://github.com/sters/cakephp3-aws-s3-datasource",
+  "homepage": "https://github.com/fanatik3/cakephp3-aws-s3-datasource",
   "authors": [
     {
       "name": "sters"
