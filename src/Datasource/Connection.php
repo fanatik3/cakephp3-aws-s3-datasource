@@ -25,7 +25,7 @@ class Connection implements ConnectionInterface
     public function __construct(array $config = [])
     {
         if (empty($config['key']) || empty($config['secret']) ||
-            empty($config['region']) || empty($config['bucketName'])
+            empty($config['region']) || empty($config['bucketName']) || empty($config['endpoint'])
         ) {
             throw new \InvalidArgumentException('Config "key" or "secret" or "region" or "bucketName" missing.');
         }
@@ -38,6 +38,7 @@ class Connection implements ConnectionInterface
                 'secret' => $this->_config['secret'],
             ],
             'region'      => $this->_config['region'],
+            'endpoint' => $this->_config['endpoint'],
             'version'     => '2006-03-01',
         ]);
         $this->_s3Client->registerStreamWrapper();
